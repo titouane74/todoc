@@ -18,7 +18,4 @@ public class ProjectDataRepository {
 
     public LiveData<List<Project>> getProjects() { return mProjectDao.getProjects(); }
 
-    public void createProject(Project pProject) { mProjectDao.insertProject(pProject); }
-
-
 }
