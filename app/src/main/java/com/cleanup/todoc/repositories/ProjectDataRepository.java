@@ -14,8 +14,11 @@ public class ProjectDataRepository {
 
     private ProjectDao mProjectDao;
 
-    public void ProjectDataRepository(ProjectDao pProjectDao) { this.mProjectDao = pProjectDao; }
+    public ProjectDataRepository(ProjectDao pProjectDao) { mProjectDao = pProjectDao; }
 
-    public LiveData<List<Project>> getProjects(long pId) { return this.mProjectDao.getProjects(pId); }
+    public LiveData<List<Project>> getProjects() { return mProjectDao.getProjects(); }
+
+    public void createProject(Project pProject) { mProjectDao.insertProject(pProject); }
+
 
 }

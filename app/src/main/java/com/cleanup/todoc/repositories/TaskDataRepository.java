@@ -15,13 +15,11 @@ public class TaskDataRepository {
 
     private TaskDao  mTaskDao;
 
-    public void TaskDataRepository(TaskDao pTaskDao) { this.mTaskDao = pTaskDao; }
+    public TaskDataRepository(TaskDao pTaskDao) { mTaskDao = pTaskDao; }
 
-    public LiveData<List<Task>> getTask(long pId) { return this.mTaskDao.getTask(pId); }
+    public LiveData<List<Task>> getTasks() { return mTaskDao.getTasks(); }
 
     public void createTask(Task pTask) { mTaskDao.insertTask(pTask); }
 
-    public void updateTask(Task pTask) { mTaskDao.updateTask(pTask); }
-
-    public void deleteTask(long pId) { mTaskDao.deleteTask(pId); }
+    public void deleteTask(Task pTask) { mTaskDao.deleteTask(pTask); }
 }
