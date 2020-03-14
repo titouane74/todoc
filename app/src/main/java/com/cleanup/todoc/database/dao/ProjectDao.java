@@ -19,5 +19,5 @@ public interface ProjectDao {
     LiveData<List<Project>> getProjects();
 
     @Insert
-    long insertProject(Project pProject);
+    void insertProject(Project... pProjects);
 }

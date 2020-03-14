@@ -41,30 +41,6 @@ public abstract class TodocDatabase extends RoomDatabase {
         return INSTANCE;
     }
 
-/*    private static RoomDatabase.Callback roomCallback = new RoomDatabase.Callback() {
-        @Override
-        public void onCreate(@NonNull SupportSQLiteDatabase db) {
-            new PopulateDbAsyncTask(INSTANCE).execute();
-            super.onCreate(db);
-        }
-    };
-
-    private static class PopulateDbAsyncTask extends AsyncTask<Void,Void,Void> {
-
-        private PopulateDbAsyncTask(TodocDatabase db) {
-            lProjectDao = db.ProjectDao();
-        }
-
-        @Override
-        protected Void doInBackground(Void... pVoids) {
-            Project[] projects = Project.getAllProjects();
-            for (Project project : projects) {
-                lProjectDao.insertProject(project);
-            }
-            return null;
-        }
-    }*/
-
     private static Callback prepopulateDatabase() {
 
         return new Callback() {
