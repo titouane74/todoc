@@ -26,6 +26,7 @@ public class ViewModelFactory implements ViewModelProvider.Factory {
         mExecutor = pExecutor;
     }
 
+    @SuppressWarnings("unchecked")
     @NonNull
     @Override
     public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
