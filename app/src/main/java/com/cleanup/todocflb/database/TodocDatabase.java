@@ -1,4 +1,4 @@
-package com.cleanup.todoc.database;
+package com.cleanup.todocflb.database;
 
 import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
@@ -9,10 +9,10 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import com.cleanup.todoc.database.dao.ProjectDao;
-import com.cleanup.todoc.database.dao.TaskDao;
-import com.cleanup.todoc.model.Project;
-import com.cleanup.todoc.model.Task;
+import com.cleanup.todocflb.database.dao.ProjectDao;
+import com.cleanup.todocflb.database.dao.TaskDao;
+import com.cleanup.todocflb.model.Project;
+import com.cleanup.todocflb.model.Task;
 
 /**
  * Created by Florence LE BOURNOT on 12/03/2020

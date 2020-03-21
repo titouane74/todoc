@@ -1,13 +1,13 @@
-package com.cleanup.todoc.viewmodel;
+package com.cleanup.todocflb.viewmodel;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
 import android.support.annotation.Nullable;
 
-import com.cleanup.todoc.model.Project;
-import com.cleanup.todoc.model.Task;
-import com.cleanup.todoc.repositories.ProjectDataRepository;
-import com.cleanup.todoc.repositories.TaskDataRepository;
+import com.cleanup.todocflb.model.Project;
+import com.cleanup.todocflb.model.Task;
+import com.cleanup.todocflb.repositories.ProjectDataRepository;
+import com.cleanup.todocflb.repositories.TaskDataRepository;
 
 import java.util.List;
 import java.util.concurrent.Executor;

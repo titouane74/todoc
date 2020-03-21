@@ -1,4 +1,4 @@
-package com.cleanup.todoc.model;
+package com.cleanup.todocflb.model;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
