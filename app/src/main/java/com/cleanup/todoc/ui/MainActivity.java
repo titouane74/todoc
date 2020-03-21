@@ -40,16 +40,9 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
     /**
      * List of all projects available in the application
      */
-//    private final Project[] allProjects = Project.getAllProjects();
     private List<Project> allProjects;
 
     private TaskViewModel mTaskViewModel;
-
-    /**
-     * List of all current tasks of the application
-     */
-//    @NonNull
-//    private final ArrayList<Task> tasks = new ArrayList<>();
 
     /**
      * The adapter which handles the list of tasks
@@ -115,8 +108,6 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
             }
         });
 
-        //TODO configure viewmodel after recyclerview
-        //TODO get current projects and tasks in database
         configureViewModel();
         getProjects();
         getTasks();
@@ -136,9 +127,7 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
         allProjects = projects;
     }
 
-    private void getTasks() {
-        mTaskViewModel.getTasks().observe(this, this::updateTasks);
-    }
+    private void getTasks() { mTaskViewModel.getTasks().observe(this, this::updateTasks); }
 
 
     @Override
@@ -161,7 +150,6 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
             sortMethod = SortMethod.RECENT_FIRST;
         }
 
-//        updateTasks();
         getTasks();
         return super.onOptionsItemSelected(item);
     }
@@ -169,9 +157,7 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
     @Override
     public void onDeleteTask(Task task) {
         //TODO replace with deleteTask method in database
-//        tasks.remove(task);
         mTaskViewModel.deleteTask(task);
-//        updateTasks();
     }
 
     /**
@@ -198,11 +184,8 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
             // If both project and name of the task have been set
             else if (taskProject != null) {
                 // TODO: Replace this by id of persisted task
-//                long id = (long) (Math.random() * 50000);
-
                 //The id is autogenerate in the database
                 Task task = new Task(
-//                        id,
                         taskProject.getId(),
                         taskName,
                         new Date().getTime()
@@ -243,10 +226,7 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
      * @param task the task to be added to the list
      */
     private void addTask(@NonNull Task task) {
-        //TODO replace with createTask method in database
-//        tasks.add(task);
         mTaskViewModel.createTask(task);
-//        updateTasks();
     }
 
     /**

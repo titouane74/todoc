@@ -55,7 +55,7 @@ public class TaskDaoTest {
     }
 
     @After
-    public void closeDb() throws Exception {
+    public void closeDb() {
         mTodocDatabase.close();
     }
 
