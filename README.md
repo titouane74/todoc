@@ -4,15 +4,13 @@ Le projet :
 ===========
 Titre du projet : Todoc
 ------------------------------
-L'objectif de ce projet est de rendre les données persistentes en étant stockées dans une base de données.
-Les tests unitaires et instrumentalisés doivent s'exécutér sans échouer.
+L'objectif de ce projet est de rendre les données persistantes en étant stockées dans une base de données.
+
 
 Fonctionnalités créées :
-    - Ecran principale listant les réunions réservées :
-        - alimenter la liste des réunions
-        - ajouter un menu permetant de filtre les réunions par date ou par salle de réunion
-        - ajouter un bouton d'ajout d'une nouvelle réunion
-        - supprimer une réunion de la liste
+    - ajouter une tâche dans le base de données
+    - supprimer une tâche de la base de données
+    - récupérer la liste des tâches contenu dans la base de données
 
 Le programme :
 ==============
