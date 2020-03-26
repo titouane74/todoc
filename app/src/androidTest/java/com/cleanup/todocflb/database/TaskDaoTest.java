@@ -33,8 +33,8 @@ public class TaskDaoTest {
     private List<Task> mTasks;
     private List<Project> mProjects;
 
-    private Task mTaskDemo1 = new Task(mListProjects[0].getId(),"Test instru 1",new Date().getTime());
-    private Task mTaskDemo2 = new Task(mListProjects[1].getId(),"Test instru 2",new Date().getTime());
+    private Task mTaskDemo1 = new Task(mListProjects[0].getId(),"Test 1",new Date().getTime());
+    private Task mTaskDemo2 = new Task(mListProjects[1].getId(),"Test 2",new Date().getTime());
 
     @Rule
     public InstantTaskExecutorRule mInstantTaskExecutorRule = new InstantTaskExecutorRule();
