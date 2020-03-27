@@ -19,7 +19,8 @@ public class ViewModelFactory implements ViewModelProvider.Factory {
     private final TaskDataRepository mTaskDataSource;
     private final Executor mExecutor;
 
-    public ViewModelFactory(ProjectDataRepository pProjectDataSource, TaskDataRepository pTaskDataSource,  Executor pExecutor) {
+    public ViewModelFactory(ProjectDataRepository pProjectDataSource,
+                            TaskDataRepository pTaskDataSource,  Executor pExecutor) {
 
         mProjectDataSource = pProjectDataSource;
         mTaskDataSource = pTaskDataSource;

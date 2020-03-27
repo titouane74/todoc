@@ -24,5 +24,4 @@ public interface TaskDao {
 
     @Delete
     int deleteTask(Task pTask);
-
 }

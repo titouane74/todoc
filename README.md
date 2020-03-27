@@ -36,7 +36,7 @@ Exécution et résultat des tests unitaires :
 
     Dans le repository : todoc/app/src/androidTest/java/com/cleanup/todocflb/database
     Particularité, ce test unitaire est stocké et exéctuté dans le répertoire des tests instrumentalisés
-    car il utilise une @Rule d'exécution comme pour les tests instrumentalisés.
+    car le test est exécuté via le device Android même si on ne teste pas la vue.
 
 	- ouvrir le fichier : TaskDaoTest.java
 	- lancer l'exécution sur la class TaskDaoTest

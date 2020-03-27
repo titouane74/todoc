@@ -24,7 +24,8 @@ public class TaskViewModel extends ViewModel {
     @Nullable
     private LiveData<List<Project>> mProjects;
 
-    public TaskViewModel(ProjectDataRepository pProjectDataSource, TaskDataRepository pTaskDataSource, Executor pExecutor) {
+    public TaskViewModel(ProjectDataRepository pProjectDataSource,
+                         TaskDataRepository pTaskDataSource, Executor pExecutor) {
 
         mProjectDataSource = pProjectDataSource;
         mTaskDataSource = pTaskDataSource;

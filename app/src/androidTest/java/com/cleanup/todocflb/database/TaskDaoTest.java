@@ -51,7 +51,6 @@ public class TaskDaoTest {
         assertTrue(mTasks.isEmpty());
 
         mProjects = LiveDataTestUtil.getValue(mTodocDatabase.ProjectDao().getProjects());
-
     }
 
     @After

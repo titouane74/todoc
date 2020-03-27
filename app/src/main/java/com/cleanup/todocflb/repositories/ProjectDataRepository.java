@@ -17,5 +17,4 @@ public class ProjectDataRepository {
     public ProjectDataRepository(ProjectDao pProjectDao) { mProjectDao = pProjectDao; }
 
     public LiveData<List<Project>> getProjects() { return mProjectDao.getProjects(); }
-
 }

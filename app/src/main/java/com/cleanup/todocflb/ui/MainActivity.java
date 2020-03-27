@@ -119,13 +119,9 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
         mTaskViewModel.init();
     }
 
-    private void getProjects() {
-        mTaskViewModel.getProjects().observe(this, this::updateProjects);
-    }
+    private void getProjects() { mTaskViewModel.getProjects().observe(this, this::updateProjects); }
 
-    private void updateProjects(List<Project> projects) {
-        allProjects = projects;
-    }
+    private void updateProjects(List<Project> projects) { allProjects = projects; }
 
     private void getTasks() { mTaskViewModel.getTasks().observe(this, this::updateTasks); }
 

@@ -41,13 +41,11 @@ public abstract class TodocDatabase extends RoomDatabase {
     }
 
     private static Callback prepopulateDatabase() {
-
         return new Callback() {
 
             @Override
             public void onCreate(@NonNull SupportSQLiteDatabase db) {
                 super.onCreate(db);
-
                 Project[] projects = Project.getAllProjects();
                 for (Project project : projects) {
                     ContentValues contentValues = new ContentValues();
