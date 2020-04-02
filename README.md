@@ -40,7 +40,7 @@ Exécution et résultat des tests unitaires :
 
 	- ouvrir le fichier : TaskDaoTest.java
 	- lancer l'exécution sur la class TaskDaoTest
-	- résultat d'exécution dans le reposotiry Todoc/Test_Results/ :  Passed - Test Results - TaskDaoTest.html
+	- résultat d'exécution dans le reposotiry Todoc/Test_Results/ :  Passed - Test Results - TaskDaoTest_(1).html
 
 La License :
 ============
