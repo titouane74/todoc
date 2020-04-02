@@ -97,6 +97,8 @@ public class TaskDaoTest {
         assertEquals("Projet Lucidia", mTaskDemo2.getProject().getName());
         assertEquals(mProjects.get(1).getName(), mTaskDemo2.getProject().getName());
 
+        mTodocDatabase.TaskDao().deleteTask(mTasks.get(0));
+
     }
 
 }
