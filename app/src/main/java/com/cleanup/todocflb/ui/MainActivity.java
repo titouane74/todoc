@@ -152,7 +152,6 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
 
     @Override
     public void onDeleteTask(Task task) {
-        //TODO replace with deleteTask method in database
         mTaskViewModel.deleteTask(task);
     }
 
@@ -179,7 +178,6 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
             }
             // If both project and name of the task have been set
             else if (taskProject != null) {
-                // TODO: Replace this by id of persisted task
                 //The id is autogenerate in the database
                 Task task = new Task(
                         taskProject.getId(),

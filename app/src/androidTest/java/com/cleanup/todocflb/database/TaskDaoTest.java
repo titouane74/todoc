@@ -70,6 +70,7 @@ public class TaskDaoTest {
         assertEquals("Projet Tartampion", mTaskDemo1.getProject().getName());
         assertEquals(mProjects.get(0).getName(), mTaskDemo1.getProject().getName());
 
+        mTodocDatabase.TaskDao().deleteTask(mTasks.get(0));
     }
 
     @Test
