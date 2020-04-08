@@ -1,16 +1,28 @@
 package com.cleanup.todocflb;
 
+import android.arch.persistence.room.Room;
+import android.database.sqlite.SQLiteDatabase;
+import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import com.cleanup.todocflb.database.LiveDataTestUtil;
+import com.cleanup.todocflb.database.TodocDatabase;
+import com.cleanup.todocflb.model.Project;
+import com.cleanup.todocflb.model.Task;
 import com.cleanup.todocflb.ui.MainActivity;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import java.util.List;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
@@ -21,6 +33,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static com.cleanup.todocflb.TestUtils.withRecyclerView;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -32,6 +45,11 @@ import static org.junit.Assert.assertThat;
 public class MainActivityInstrumentedTest {
     @Rule
     public ActivityTestRule<MainActivity> rule = new ActivityTestRule<>(MainActivity.class);
+
+    @BeforeClass
+    public static void beforeClass() {
+        InstrumentationRegistry.getTargetContext().deleteDatabase("Todoc.db");
+    }
 
     @Test
     public void addAndRemoveTask() {
