@@ -1,6 +1,6 @@
 package com.cleanup.todocflb.repositories;
 
-import android.arch.lifecycle.LiveData;
+import androidx.lifecycle.LiveData;
 
 import com.cleanup.todocflb.database.dao.ProjectDao;
 import com.cleanup.todocflb.model.Project;

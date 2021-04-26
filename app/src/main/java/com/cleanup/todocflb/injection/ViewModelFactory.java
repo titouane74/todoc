@@ -1,8 +1,8 @@
 package com.cleanup.todocflb.injection;
 
-import android.arch.lifecycle.ViewModel;
-import android.arch.lifecycle.ViewModelProvider;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.annotation.NonNull;
 
 import com.cleanup.todocflb.repositories.ProjectDataRepository;
 import com.cleanup.todocflb.repositories.TaskDataRepository;
